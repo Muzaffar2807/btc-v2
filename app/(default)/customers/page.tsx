@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Customers - Simple",
+  title: "Projects - Brotocode",
   description: "Page description",
 };
 

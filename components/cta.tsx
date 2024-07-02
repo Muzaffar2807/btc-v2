@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
+import InteractiveButton from "./InterActiveButton";
 
 export default function Cta() {
+  const handleContactUsClick = () => {
+    const emailAddress = "connect@brotocode.com"; // Replace with your email
+    const subject = "Client Details"; // You can customize the email subject here
+
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
+      subject
+    )}`;
+
+    window.location.href = mailtoLink;
+  };
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -31,21 +42,9 @@ export default function Cta() {
           </div>
           <div className="px-4 py-12 md:px-12 md:py-20">
             <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+              Create your next project with Brotocode
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
-                className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
-              >
-                <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
-                </span>
-              </a>
-            </div>
+           <InteractiveButton />
           </div>
         </div>
       </div>

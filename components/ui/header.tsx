@@ -27,8 +27,18 @@ export default function Header() {
         <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
           {/* Site branding */}
           <div className="flex flex-1 items-center">
-           {/*  <Logo /> */} {" "}
-            <h2>Brotocode.com</h2>
+            {/*  <Logo /> */}{" "}
+            <Link href="/">
+              <h1
+                style={{
+                  fontSize: "1.3rem",
+                  padding: "0 .5rem",
+                  cursor: "pointer",
+                }}
+              >
+                Brotocode.com
+              </h1>{" "}
+            </Link>
           </div>
 
           {/* Desktop navigation */}
@@ -37,10 +47,10 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
               <li className="px-3 py-1">
                 <Link
-                  href="/pricing"
+                  href="/customers"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Pricing
+                  Work
                 </Link>
               </li>
               <li className="px-3 py-1">
@@ -48,49 +58,99 @@ export default function Header() {
                   href="/customers"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Customers
+                  About
                 </Link>
               </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/blog"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/documentation"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Docs
-                </Link>
-              </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Extra">
+              <Dropdown title="Industries">
                 {/* 2nd level: hover */}
                 <li>
                   <Link
-                    href="/support"
+                    href=""
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Support center
+                    B2B
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/apps"
+                    href=""
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Apps
+                    SaaS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Fintech
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Startups
+                  </Link>
+                </li>
+              </Dropdown>
+              <li className="px-3 py-1">
+                <Link
+                  href="/customers"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                >
+                  Contact
+                </Link>
+              </li>
+
+              {/* 1st level: hover */}
+              <Dropdown title="Our Services">
+                {/* 2nd level: hover */}
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    UI/UX Desgin
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Web Development
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    E-Commerce
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    App Development
                   </Link>
                 </li>
               </Dropdown>
             </ul>
           </nav>
- 
-          
 
           <MobileMenu />
         </div>
