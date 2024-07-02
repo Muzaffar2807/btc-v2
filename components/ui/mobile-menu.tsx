@@ -108,7 +108,7 @@ export default function MobileMenu() {
                 onClick={() => setMobileNavOpen(false)}
               >
                 Portfolio    
-              </Link>
+              </Link>     
             </li>
             <li>
               <Link
