@@ -5,22 +5,23 @@ export default function AboutIntro() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-
+        <div className="pt-32 pb-1 md:pt-40 md:pb-1">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4">We enable developers to build amazing things</h1>
+          <div className="max-w-3xl mx-auto text-center pb-1 md:pb-16">
+            
             <p className="text-xl text-gray-600">
-              We have transformed product development, making it faster, simpler... better! That's why in just three years we now help more developers build projects than anyone else.
+              Welcome to BrotoCode, where innovation meets excellence in web and
+              app development. At BrotoCode, we are passionate about crafting
+              digital solutions that empower businesses to thrive in the digital
+              age. With a focus on creativity, quality, and customer
+              satisfaction, we strive to deliver cutting-edge technology
+              solutions tailored to meet your unique needs.
             </p>
           </div>
 
-          <figure className="flex justify-center items-start">
-            <Image className="rounded shadow-2xl" src={AboutImage} width={768} height={432} priority alt="About us" />
-          </figure>
-
+          
         </div>
       </div>
     </section>
-  )
+  );
 }

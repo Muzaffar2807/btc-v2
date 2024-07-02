@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 import Link from "next/link";
 import Logo from "./logo";
@@ -28,6 +29,8 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             {/*  <Logo /> */}{" "}
+            <Image src="/images/logo2.png" width={30} height={20} alt="logo"/>
+
             <Link href="/">
               <h1
                 style={{
@@ -47,15 +50,23 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
               <li className="px-3 py-1">
                 <Link
-                  href="/customers"
+                  href="/"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Work
+                  Home
                 </Link>
               </li>
               <li className="px-3 py-1">
                 <Link
-                  href="/customers"
+                  href="/portfolio"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li className="px-3 py-1">
+                <Link
+                  href="/about"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
                   About
@@ -104,14 +115,7 @@ export default function Header() {
                   </Link>
                 </li>
               </Dropdown>
-              <li className="px-3 py-1">
-                <Link
-                  href="/customers"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Contact
-                </Link>
-              </li>
+             
 
               {/* 1st level: hover */}
               <Dropdown title="Our Services">

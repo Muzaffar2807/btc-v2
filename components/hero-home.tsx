@@ -45,6 +45,10 @@ export default function HeroHome() {
               </p>
               
             </div>
+             <a 
+        className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+        href="/portfolio"
+      >See Our Work</a>
           </div>
           
         </div>
