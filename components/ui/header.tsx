@@ -72,8 +72,8 @@ export default function Header() {
                   About
                 </Link>
               </li>
-              <Dropdown title="Industries">
-                {/* 2nd level: hover */}
+           {/*    <Dropdown title="Industries">
+          
                 <li>
                   <Link
                     href=""
@@ -114,7 +114,7 @@ export default function Header() {
                     Startups
                   </Link>
                 </li>
-              </Dropdown>
+              </Dropdown> */}
              
 
               {/* 1st level: hover */}

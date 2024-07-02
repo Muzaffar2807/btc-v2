@@ -36,23 +36,16 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/projects"
                 >
                   Projects
                 </Link>
               </li>
+              
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  Testimonails
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="/about"
                 >
                   About us
                 </Link>
@@ -61,7 +54,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
           </div>
 
           {/* 5th block */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
+        {/*   <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-medium">Social</h3>
             <ul className="flex gap-1">
               <li>
@@ -110,7 +103,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
