@@ -36,9 +36,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="/projects"
+                  href="/portfolio"
                 >
-                  Projects
+                  Portfolio
                 </Link>
               </li>
               
